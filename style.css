@@ -48,8 +48,9 @@
     padding: 1px;
 }
 
-.form__input--narrow {
+.form__input--dropdown {
     width: 10em;
+    height: 2em;
 }
 
 .form__input--textbox {
