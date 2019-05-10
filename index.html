@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script defer src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <title>FCC: Survey Form</title>
+</head>
+<body class="page">
+    <h1 id="title" class="title">Survey Form</h1>
+    <div class="container">
+        <p id="description" class="container__description">Let us know how we can improve freeCodeCamp</p>
+        <form action="" method="post" id="survey-form" class="form">
+            <label for="name" id="name-label" class="form__label">* Name:</label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required class="form__input">
+            <label for="email" id="email-label" class="form__label">* E-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Enter your Email" required class="form__input">
+            <label for="age" id="number-label" class="form__label">Age:</label>
+            <input type="number" name="age" id="number" min="1" max="120" placeholder="Age" class="form__input">
+            <label for="dropdown" class="form__label">Which option best describes your current role?</label>
+            <select name="curr-role" id="dropdown" class="form__input form__input--narrow">
+                <option value="" disabled selected>Select an option</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Full Time Learner">Full Time Learner</option>
+                <option value="Prefer not to say">Prefer not to say</option>
+                <option value="Other">Other</option>
+            </select>
+            <label for="recommends" class="form__label">How likely is that you would recommend freeCodeCamp to a friend?</label>
+            <div class="radio-group">
+                <label class="radio-group__label"><input type="radio" name="recommend" value="Definitely" class="radio-group__input">Definitely</label>
+                <label class="radio-group__label"><input type="radio" name="recommend" value="Maybe" class="radio-group__input">Maybe</label>
+                <label class="radio-group__label"><input type="radio" name="recommend" value="Not Sure" class="radio-group__input">Not Sure</label>
+            </div>
+            <label for="improvements" class="form__label">Things that should be improved in the future
+                (Check all that apply):
+            </label>
+            <div class="radio-group">
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Front-end Projects" class="radio-group__input">Front-end Projects</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Back-end Projects" class="radio-group__input">Back-end Projects</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Data Visualization" class="radio-group__input">Data Visualization</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Challenges" class="radio-group__input">Challenges</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Open Source Community" class="radio-group__input">Open Source Community</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Gitter help rooms" class="radio-group__input">Gitter help rooms</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Videos" class="radio-group__input">Videos</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="City Meetups" class="radio-group__input">City Meetups</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Wiki" class="radio-group__input">Wiki</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Forum" class="radio-group__input">Forum</label>
+                <label class="radio-group__label"><input type="checkbox" name="fcc-improvements" value="Additional Courses" class="radio-group__input">Additional Courses</label>
+            </div>
+            <label for="comments" class="form__label">Any Comments or Suggestions?</label>
+            <textarea name="comments" id="comments" class="form__input form__input--textbox"  placeholder="Enter your comment here..." ></textarea>
+            <button form="survey-form" id="submit" class="btn form__button-row">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

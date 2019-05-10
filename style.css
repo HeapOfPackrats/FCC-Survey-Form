@@ -1,0 +1,122 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500;800);
+
+.page {
+    font-family: 'Raleway', Helvetica, sans-serif;
+    background-color: #AFF4EE;
+    padding: 0.1em 0.1em;
+}
+
+.title {
+    font-size: 2em;
+    font-weight: 800;
+    text-align: center;
+    margin: 0.5em auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #FCFCFC;
+    border-radius: .5em;
+    margin: 1.5em auto;
+    padding: 1.5em 2em;
+    width: 80%;
+    max-width: 50em;
+}
+
+.container__description {
+    font-size: 1em;
+}
+
+.form {
+    display: grid;
+    grid-template-columns: 40fr 60fr;
+    grid-gap: 1.5em 1.5em;
+    margin: 1em 1em;
+}
+
+.form__label {
+    text-align: right;
+    justify-self: right;
+}
+
+.form__input {
+    justify-self: left;
+    width: 80%;
+    height: 1.5em;
+    padding: 1px;
+}
+
+.form__input--narrow {
+    width: 10em;
+}
+
+.form__input--textbox {
+    height: 5em;
+}
+
+.radio-group {
+    display: grid;
+    grid-row-gap: 0.5em;
+    grid-template-columns: 1fr;
+}
+
+.radio-group__input {
+    width: auto;
+}
+
+.radio-group__label {
+    text-align: left;
+    justify-self: left;
+}
+
+.form__button-row {
+    justify-self: center;
+    grid-column: 1 / 3;
+}
+
+.btn {
+    background-color: #399CBD;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: #FCFCFC;
+    border: 0 none transparent;
+    border-radius: 0.2em;
+    width: 7em;
+    height: 2.5em;
+}
+
+@media (max-width: 40em) {
+    .form {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 1.5em 1.5em;
+        margin: 1em 1em;
+    }
+
+    .form__label {
+        text-align: left;
+        justify-self: left;
+    }
+    
+    .form__input {
+        justify-self: left;
+        width: 1fr;
+        margin: auto 0 auto 0.3em;
+    }
+    
+    .form__input--narrow {
+        width: 10em;
+    }
+
+    .radio-group__input {
+        width: auto;
+    }
+
+    .form__button-row {
+        justify-self: center;
+        grid-column: 1 / 2;
+    }
+}
